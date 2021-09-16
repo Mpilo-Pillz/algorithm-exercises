@@ -7,6 +7,14 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    debugger
+return str.split('').every((character, index) => {
+    return character === str[str.length - index - 1];
+});
+}
+
+console.log(palindrome('dlamini'))
+console.log(palindrome('ini'))
 
 module.exports = palindrome;
